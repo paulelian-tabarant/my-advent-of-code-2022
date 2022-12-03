@@ -1,9 +1,11 @@
+package caloriecounting
+
 import java.io.File
 
 object ElvesInputFileReader {
 
     fun read(filename: String): List<ElfSupply> {
-        val file = File("src/test/resources/$filename")
+        val file = File("src/test/resources/caloriecounting/$filename")
         val elfSupplies = mutableListOf<ElfSupply>()
         var currentCalories = mutableListOf<Int>()
 

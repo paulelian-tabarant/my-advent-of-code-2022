@@ -1,3 +1,5 @@
+package caloriecounting
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -53,7 +55,7 @@ internal class CaloriesCounterTest {
     @Test
     fun `should return the maximum sum of every elf supply`() {
         // Given
-        val elvesFromFile = ElvesInputFileReader.read("maximum-supply")
+        val elvesFromFile = ElvesInputFileReader.read("input")
 
         // When
         val actual = caloriesCounter.getSumOfMaxCaloriesSupply(elvesFromFile)
@@ -83,7 +85,7 @@ internal class CaloriesCounterTest {
     @Test
     fun `should return the sum of the 3 maximum calories supplies from file`() {
         // Given
-        val severalElves = ElvesInputFileReader.read("maximum-supply")
+        val severalElves = ElvesInputFileReader.read("input")
 
         // When
         val actual = caloriesCounter.getSumOfThreeMaxCaloriesSupply(severalElves)

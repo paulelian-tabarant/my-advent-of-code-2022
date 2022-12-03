@@ -1,3 +1,5 @@
+package caloriecounting
+
 class CaloriesCounter {
     fun getSumOfMaxCaloriesSupply(supplies : List<ElfSupply>): Int {
         if (supplies.isEmpty()) return 0
